@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://gpx.ge/root/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snooker</title>
+  </head>
+  <body>
+    <div class="box">
+      <button class="myballs" value="1r"><span id="redballleft"></span></button>
+      <button class="myballs" value="2c" style="display: none"></button>
+      <button class="myballs" value="3c" style="display: none"></button>
+      <button class="myballs" value="4c" style="display: none"></button>
+      <button class="myballs" value="5c" style="display: none"></button>
+      <button class="myballs" value="6c" style="display: none"></button>
+      <button class="myballs" value="7c" style="display: none"></button>
+      <button id="togglebreakbutton"><i class="bx bxs-x-square"></i></button>
+      <!-- <button id="toggleBreakButton"><i class="fa-duotone fa-arrow-right-arrow-left"></i></button> -->
+      <!-- <button id="endFrameButton"><i class="fa-solid fa-flag-checkered"></i></button> -->
+      <button id="endframebutton"><i class="bx bxs-flag-checkered"></i></button>
+    </div>
+    <br /><br />
+    <div class="scoreline">
+      <div id="firstflag"><img src="img/1.png" alt="" /></div>
+      <div id="firstplayer">O'SULLIVAN (2)</div>
+      <div id="firstplayerscore">
+        <img id="leftarrow" src="img/l.png" alt="" />
+        <span id="firstscore"></span>
+      </div>
+      <div id="matchscore"><span id="firstaggscore"></span> (33) <span id="secondaggscore"></span></div>
+
+      <div id="secontplayerscore">
+        <span id="secondscore" class="disabled"></span>
+        <img id="rightarrow" src="img/r.png" alt="" style="height: 0" />
+      </div>
+
+      <div id="secontplayer">TRUMP (4)</div>
+      <div id="secondflag"><img src="img/2.png" alt="" /></div>
+      <!-- <div id="secondflag"><img src="img/2.png" alt=""></div> -->
+    </div>
+  </body>
+
+  <script src="js.js"></script>
+</html>
